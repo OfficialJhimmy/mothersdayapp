@@ -102,11 +102,11 @@ export default function InputForm() {
   return (
     <div className="flex flex-col lg:flex-row h-screen w-full">
       <div
-        className="flex flex-col gap-4 md:w-full lg:w-1/2 w-full bg-white"
+        className="flex flex-col gap-4 md:w-full lg:w-1/2 w-full bg-white justify-center"
         style={{ padding: "20px" }}
       >
         <div className="">
-          <h1 className="text-[25px] lg:text-[40px]">{greeting}</h1>
+          <h1 className="text-[25px] lg:text-[40px] text-start">{greeting}</h1>
           <p className="text-[18px] lg:text-[22px]">
             Write {typeEffect} messages to your mother on this special day.
           </p>
@@ -141,6 +141,7 @@ export default function InputForm() {
             <option value={50}>50 Words</option>
             <option value={100}>100 Words</option>
             <option value={150}>150 Words</option>
+            <option value={200}>200 Words</option>
             <option value={250}>250 Words</option>
             <option value={300}>300 Words</option>
           </select>
@@ -154,7 +155,6 @@ export default function InputForm() {
             <option>Select an emotion</option>
             <option value="touching">Touching</option>
             <option value="funny">Funny</option>
-            <option value="emotional">Emotional</option>
             <option value="inspirational">Inspirational</option>
             <option value="heartfelt">Heartfelt</option>
           </select>
