@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+/* FONTS */
+@font-face {
+  font-family: "spaceage";
+  src: url("./assets/fonts/space_age/spaceage.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "marlinsoft-regular";
+  src: url("./assets/fonts/marlin-soft-basic/MarlinSoftBasic-Regular.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "marlinsoft-slant";
+  src: url("./assets/fonts/marlin-soft-basic/MarlinSoftBasicSlant-Regular.otf") format("opentype");
+  /* font-weight: normal; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "circularstd";
+  src: url("./assets/fonts/circular-std-medium-500.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular A Medium";
+  src: url("./assets/fonts/euclid-circular-a/Euclid-Circular-A-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular A Regular";
+  src: url("./assets/fonts/euclid-circular-a/Euclid-Circular-A-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular A Light";
+  src: url("./assets/fonts/euclid-circular-a/Euclid-Circular-A-Light.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular A SemiBold";
+  src: url("./assets/fonts/euclid-circular-a/Euclid-Circular-A-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Euclid Circular A Regular";
+
+}
+
+#root {
+  overflow: hidden;
+}
+
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+body {
+  overflow: hidden;
+  text-decoration: none;
+  /* background-color: #1b1b1b; */
+
+}
+
