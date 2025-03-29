@@ -187,8 +187,8 @@ const InputForm = () => {
         </div>
       </div>
       <div
-        className="bg-[#1b1b1b] md:w-full lg:w-1/2 w-full flex flex-col gap-7 lg:h-screen h-[100%] overflow-y-auto"
-        style={{ padding: "70px 30px", maxHeight: "50vh" }}
+        className="bg-[#1b1b1b] md:w-full lg:w-1/2 w-full flex flex-col gap-7 lg:h-screen h-[100%] overflow-y-auto max-h-[50vh] lg:max-h-[100vh]"
+        style={{ padding: "70px 30px" }}
       >
         <h2 className="text-[20px] lg:text-[35px] text-white">
           Generated Mother's Day Message
