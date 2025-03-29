@@ -1,19 +1,20 @@
+
 import React, { useEffect, useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsCopy, BsShare } from "react-icons/bs";
 import { messages } from "../data/data";
-import { message as antdMessage } from "antd";
 import { Tooltip } from "antd";
+import erin from '../assets/erinbrand.webp'
 
-export default function InputForm() {
+const InputForm = () => {
   const [senderName, setSenderName] = useState("");
   const [name, setName] = useState("");
   const [wordCount, setWordCount] = useState();
   const [emotion, setEmotion] = useState("");
   const [message, setMessage] = useState(
-    "Your Personlaized Message will show up once you click on the Generate Message button!"
+    "Your Personalized Message will show up once you click on the Generate Message button!"
   );
   const [typedMessage, setTypedMessage] = useState("");
 
@@ -33,13 +34,12 @@ export default function InputForm() {
   }, []);
 
   const [typeEffect] = useTypewriter({
-    words: ["Emotional", "Touching", "Funny", "Heartfelt", "Inspirational"],
+    words: ["Touching", "Funny", "Heartfelt", "Inspirational"],
     loop: {},
     typeSpeed: 200,
     deleteSpeed: 80,
   });
 
-  // Function to simulate typing effect
   const simulateTyping = (message) => {
     setTypedMessage("");
     setIsTyping(true); // Disable form while typing
@@ -102,9 +102,10 @@ export default function InputForm() {
   return (
     <div className="flex flex-col lg:flex-row h-screen w-full">
       <div
-        className="flex flex-col gap-4 md:w-full lg:w-1/2 w-full bg-white justify-center"
-        style={{ padding: "20px" }}
+        className="flex flex-col gap-4 md:w-full lg:w-1/2 w-full bg-white"
+        style={{ padding: "70px 30px" }}
       >
+        {/* <img src={erin} alt="" className="w-[30%] h-[200px]"/> */}
         <div className="">
           <h1 className="text-[25px] lg:text-[40px] text-start">{greeting}</h1>
           <p className="text-[18px] lg:text-[22px]">
@@ -186,13 +187,13 @@ export default function InputForm() {
         </div>
       </div>
       <div
-        className="bg-[#1b1b1b] md:w-full lg:w-1/2 w-full flex flex-col gap-7 h-screen"
-        style={{ padding: "20px 40px" }}
+        className="bg-[#1b1b1b] md:w-full lg:w-1/2 w-full flex flex-col gap-7 lg:h-screen h-[100%]"
+        style={{ padding: "70px 30px" }}
       >
-        <h2 className="text-[20px] lg:text-[40px] text-white">
+        <h2 className="text-[20px] lg:text-[35px] text-white">
           Generated Mother's Day Message
         </h2>
-        <p className="text-[20px] font-normal text-white">{typedMessage}</p>
+        <p className=" text-[16px] lg:text-[20px] font-normal text-white">{typedMessage}</p>
 
         {messageCompleted && (
           <div
@@ -223,4 +224,6 @@ export default function InputForm() {
       </div>
     </div>
   );
-}
+};
+
+export default InputForm;

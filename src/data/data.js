@@ -1,5 +1,4 @@
 export const messages = [
-  // Touching
   {
     wordCount: 50,
     emotion: "touching",
@@ -33,7 +32,6 @@ export const messages = [
     text: "Mom, words could never truly capture how much you mean to me. From my first steps to my biggest dreams, you've been there, offering love, wisdom, and strength. Every sacrifice you’ve made, every lesson you’ve taught, and every moment you've shared has shaped my life in the most beautiful way. I am endlessly grateful for your love, patience, and guidance. Today, I celebrate you and everything you are. Wishing you a Mother’s Day as wonderful as your heart!",
   },
 
-  // Funny
   {
     wordCount: 50,
     emotion: "funny",
